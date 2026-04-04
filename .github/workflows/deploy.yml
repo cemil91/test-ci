@@ -19,3 +19,4 @@ jobs:
           script: |
             cd /var/www/html/test-ci
             git pull origin main
+            node app.js
