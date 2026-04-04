@@ -20,4 +20,4 @@ jobs:
             cd /var/www/html/test-ci
             git pull origin main
             npm install
-            pm2 start app.js --name test-ci --update-env || pm2 restart test-ci
+            pm2 restart test-ci || pm2 start app.js --name test-ci --update-env
